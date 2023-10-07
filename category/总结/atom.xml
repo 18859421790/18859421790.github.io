@@ -1,22 +1,17 @@
 <?xml version="1.0"?>
-<rss version="2.0">
-    <channel>
-        <title>xu·live • Posts by &#34;前端&#34; tag</title>
-        <link>https://18859421790.github.io</link>
-        <description>永远热泪盈眶</description>
-        <language>zh-CN</language>
-        <pubDate>Sun, 08 Oct 2023 00:00:00 +0800</pubDate>
-        <lastBuildDate>Sun, 08 Oct 2023 00:00:00 +0800</lastBuildDate>
-        <category>随笔</category>
-        <category>前端</category>
-        <category>一言</category>
-        <item>
-            <guid isPermalink="true">https://18859421790.github.io/2023/10/08/2023.10.8/</guid>
-            <title>react+ts 使用总结</title>
-            <link>https://18859421790.github.io/2023/10/08/2023.10.8/</link>
-            <category>前端</category>
-            <pubDate>Sun, 08 Oct 2023 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;可能是你需要的-react-typescript-50-条规范和经验&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#可能是你需要的-react-typescript-50-条规范和经验&#34;&gt;#&lt;/a&gt; 可能是你需要的 React + TypeScript 50 条规范和经验&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://18859421790.github.io</id>
+    <title>xu·live • Posts by &#34;总结&#34; category</title>
+    <link href="https://18859421790.github.io" />
+    <updated>2023-10-07T16:00:00.000Z</updated>
+    <category term="随笔" />
+    <category term="前端" />
+    <category term="一言" />
+    <entry>
+        <id>https://18859421790.github.io/2023/10/08/2023.10.8/</id>
+        <title>react+ts 使用总结</title>
+        <link rel="alternate" href="https://18859421790.github.io/2023/10/08/2023.10.8/"/>
+        <content type="html">&lt;h2 id=&#34;可能是你需要的-react-typescript-50-条规范和经验&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#可能是你需要的-react-typescript-50-条规范和经验&#34;&gt;#&lt;/a&gt; 可能是你需要的 React + TypeScript 50 条规范和经验&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;这篇文章没有对错之分，肯定也有不完善的地方，结合了自己日常开发和经验。可以让你书写代码更具严谨性，希望看完之后有所帮助。本文字数 4000+ ，看完本文大概需半小时。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -321,54 +316,8 @@
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qdWVqaW4uaW0vcG9zdC82ODQ0OTAzNTAyNjExNzU5MTE3I2hlYWRpbmctNQ==&#34;&gt;如何无痛降低 if else 面条代码复杂度&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qdWVqaW4uaW0vcG9zdC82ODQ0OTAzNjM2NzQ5Nzc4OTU4I2hlYWRpbmctNQ==&#34;&gt;你真的理解 setState 吗？&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://18859421790.github.io/2023/09/01/%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1/</guid>
-            <title>为移动和桌面设备优化你的网站</title>
-            <link>https://18859421790.github.io/2023/09/01/%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1/</link>
-            <category>前端</category>
-            <pubDate>Fri, 01 Sep 2023 22:53:43 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
-&lt;p&gt;在当今数字时代，网站访问的设备种类多种多样，从桌面电脑到智能手机和平板电脑。作为前端开发者，你需要确保你的网站在不同的设备上都能够提供出色的用户体验。这就是响应式设计的重要性所在。&lt;/p&gt;
-&lt;h2 id=&#34;什么是响应式设计&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什么是响应式设计&#34;&gt;#&lt;/a&gt; 什么是响应式设计&lt;/h2&gt;
-&lt;p&gt;响应式设计是一种网页设计方法，旨在使网站能够适应各种不同大小和分辨率的设备。它使用 CSS 媒体查询和弹性网格布局等技术，以确保网站的布局和内容在不同屏幕上都能够自动调整和优化。&lt;/p&gt;
-&lt;h2 id=&#34;为什么响应式设计如此重要&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#为什么响应式设计如此重要&#34;&gt;#&lt;/a&gt; 为什么响应式设计如此重要&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;用户体验：响应式设计提供了一致的用户体验，无论用户是使用大屏幕桌面电脑还是小屏幕智能手机。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;SEO 优化：谷歌和其他搜索引擎喜欢响应式设计，因为它使他们更容易索引和排名网站。这有助于提高你的网站在搜索结果中的可见性。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;维护简便：与维护多个单独的网站版本相比，响应式设计可以减少开发和维护的工作量，因为你只需管理一个网站。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;实施响应式设计的关键步骤&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#实施响应式设计的关键步骤&#34;&gt;#&lt;/a&gt; 实施响应式设计的关键步骤&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;使用媒体查询&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;媒体查询是 CSS 中的一种技术，允许你根据设备属性（如屏幕宽度）应用不同的 CSS 规则。这使得你可以为不同的设备定义不同的样式，从而创建响应式布局。&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;@media (max-width: 768px) &amp;#x27;&amp;#123;&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    /* 在小屏幕上应用的样式 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;@media (min-width: 769px) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    /* 在大屏幕上应用的样式 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;使用弹性网格布局&lt;/p&gt;
-&lt;p&gt;弹性网格布局是一种灵活的布局技术，使你可以轻松创建适应不同屏幕大小的网格结构。它可以帮助你创建多列布局，同时确保内容适应屏幕。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight coffeescript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;.container &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    display: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    flex-wrap: wrap;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;.item &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    flex: &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;图像优化&lt;/p&gt;
-&lt;p&gt;在响应式设计中，图像的大小和分辨率应根据设备进行优化，以减少加载时间和带宽消耗。你可以使用&lt;img&gt;元素的 srcset 属性来提供不同分辨率的图像。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight coffeescript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;img src=&lt;span class=&#34;string&#34;&gt;&amp;quot;image.jpg&amp;quot;&lt;/span&gt; alt=&lt;span class=&#34;string&#34;&gt;&amp;quot;响应式图像&amp;quot;&lt;/span&gt; srcset=&lt;span class=&#34;string&#34;&gt;&amp;quot;image-small.jpg 320w, image-medium.jpg 768w, image-large.jpg 1024w&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;结语&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#结语&#34;&gt;#&lt;/a&gt; 结语&lt;/h2&gt;
-&lt;p&gt;响应式设计是现代前端开发的不可或缺的一部分，它有助于提供一致的用户体验，提高搜索引擎可见性，减少维护工作，同时满足不同设备用户的需求。在今天的数字时代，掌握响应式设计技术对于前端开发者来说至关重要。开始使用媒体查询、弹性网格布局和图像优化，使你的网站在各种设备上都能够闪耀。&lt;/p&gt;
-&lt;p&gt;希望这篇文章有助于你理解和实施响应式设计。如果你有任何问题或想进一步了解响应式设计，请随时在评论中留言。感谢阅读！&lt;/p&gt;
- ]]></description>
-        </item>
-    </channel>
-</rss>
+</content>
+        <category term="前端" />
+        <updated>2023-10-07T16:00:00.000Z</updated>
+    </entry>
+</feed>
