@@ -3,12 +3,110 @@
     <id>https://18859421790.github.io</id>
     <title>xu·live</title>
     <link href="https://18859421790.github.io" />
-    <updated>2023-10-09T16:00:00.000Z</updated>
+    <updated>2023-10-11T16:00:00.000Z</updated>
     <category term="随笔" />
     <category term="前端" />
     <category term="一言" />
     <category term="测试" />
     <category term="jsvascript" />
+    <category term="ts" />
+    <entry>
+        <id>https://18859421790.github.io/2023/10/12/2023.10.12/</id>
+        <title>React 组件用到的 ts 类型</title>
+        <link rel="alternate" href="https://18859421790.github.io/2023/10/12/2023.10.12/"/>
+        <content type="html">&lt;h2 id=&#34;创建-ts-项目-createreactapp-myapp-typescript&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建-ts-项目-createreactapp-myapp-typescript&#34;&gt;#&lt;/a&gt; 创建 ts 项目 createreactapp myapp typescript&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC81YmE2ZDQwOTEzMWU=&#34;&gt;https://www.jianshu.com/p/5ba6d409131e&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;设置默认值&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置默认值&#34;&gt;#&lt;/a&gt; 设置默认值&lt;/h3&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; defaultProps = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;duration&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;2000&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;typescript-类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#typescript-类型&#34;&gt;#&lt;/a&gt; TypeScript 类型&lt;/h2&gt;
+&lt;h3 id=&#34;react-事件类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#react-事件类型&#34;&gt;#&lt;/a&gt; React 事件类型&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;情况&lt;/th&gt;
+&lt;th&gt;类别&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;点击事件&lt;/td&gt;
+&lt;td&gt;React.MouseEvent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;键盘事件&lt;/td&gt;
+&lt;td&gt;React.keyboardEvent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;拖拽事件&lt;/td&gt;
+&lt;td&gt;React.DragEvent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;焦点事件&lt;/td&gt;
+&lt;td&gt;React.FocusEvent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;表单域值变更事件&lt;/td&gt;
+&lt;td&gt;React.ChangeEvent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;表单提交事件&lt;/td&gt;
+&lt;td&gt;React.FormEvent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;鼠标滚动事件&lt;/td&gt;
+&lt;td&gt;React.WheelEvent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;触摸事件&lt;/td&gt;
+&lt;td&gt;React.TouchEvent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;usestate-定义&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#usestate-定义&#34;&gt;#&lt;/a&gt; useState 定义&lt;/h3&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;const [state, setState] = useState&amp;lt;HTMLDivElement&amp;gt;(null);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;const [state, setState] = useState&amp;lt;HTMLInputElement&amp;gt;(null);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;1-string-number-boolean&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-string-number-boolean&#34;&gt;#&lt;/a&gt; 1. string / number / boolean ;&lt;/h3&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;name?:string;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;num?: number;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;isOpen?:boolean&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;2-点击事件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-点击事件&#34;&gt;#&lt;/a&gt; 2. 点击事件&lt;/h3&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;onClick&lt;/span&gt;:&lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;event:React.MouseEvent&amp;lt;HTMLButtonElement&amp;gt;&lt;/span&gt;)=&amp;gt;&lt;/span&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;onClick?: &lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;event: React.SyntheticEvent&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;onClick&lt;/span&gt;: &lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;...args: any&lt;/span&gt;) =&amp;gt;&lt;/span&gt; any;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// React.MouseEventHandler&amp;lt;HTMLAnchorElement&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;onClick&lt;/span&gt;: &lt;span class=&#34;title class_&#34;&gt;React&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;MouseEventHandler&lt;/span&gt;&amp;lt;&lt;span class=&#34;title class_&#34;&gt;HTMLAnchorElement&lt;/span&gt;&amp;gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// React.MouseEventHandler&amp;lt;SVGElement&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;onClick&lt;/span&gt;: &lt;span class=&#34;title class_&#34;&gt;React&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;MouseEventHandler&lt;/span&gt;&amp;lt;&lt;span class=&#34;title class_&#34;&gt;SVGElement&lt;/span&gt;&amp;gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// React.MouseEventHandler&amp;lt;HTMLElement&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;onClick?: &lt;span class=&#34;title class_&#34;&gt;React&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;MouseEventHandler&lt;/span&gt;&amp;lt;&lt;span class=&#34;title class_&#34;&gt;HTMLElement&lt;/span&gt;&amp;gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// React.MouseEventHandler&amp;lt;JSX.Element | HTMLElement&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;onClick?: &lt;span class=&#34;title class_&#34;&gt;React&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;MouseEventHandler&lt;/span&gt;&amp;lt;&lt;span class=&#34;variable constant_&#34;&gt;JSX&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;Element&lt;/span&gt; | &lt;span class=&#34;title class_&#34;&gt;HTMLElement&lt;/span&gt;&amp;gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;3表单事件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3表单事件&#34;&gt;#&lt;/a&gt; 3. 表单事件&lt;/h3&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;onChange&lt;/span&gt;: &lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;event: React.ChangeEvent&amp;lt;HTMLInputElement&amp;gt;&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;4元素类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4元素类型&#34;&gt;#&lt;/a&gt; 4. 元素类型&lt;/h3&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;children?: &lt;span class=&#34;title class_&#34;&gt;React&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;ReactNode&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;情况&lt;/th&gt;
+&lt;th&gt;类别&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;字符串、数字&lt;/td&gt;
+&lt;td&gt;React.ReactText&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;单个 jsx 元素&lt;/td&gt;
+&lt;td&gt;React.ReactElement&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;多个 jsx 元素&lt;/td&gt;
+&lt;td&gt;React.ReactNode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;portal&lt;/td&gt;
+&lt;td&gt;React.ReactPortal&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;5-reactcssproperties&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-reactcssproperties&#34;&gt;#&lt;/a&gt; 5. React.CSSProperties;&lt;/h3&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;style?: &lt;span class=&#34;title class_&#34;&gt;React&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;CSSProperties&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;  bulletOnClick?(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      item,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      itemIndex,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      currentIndex,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;item&lt;/span&gt;: &lt;span class=&#34;title class_&#34;&gt;ReactImageGalleryItem&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;itemIndex&lt;/span&gt;: number;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;currentIndex&lt;/span&gt;: number;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;): &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  renderItem?(item?: &lt;span class=&#34;title class_&#34;&gt;ReactImageGalleryItem&lt;/span&gt;): &lt;span class=&#34;title class_&#34;&gt;React&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;ReactNode&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  renderThumbInner?(item?: &lt;span class=&#34;title class_&#34;&gt;ReactImageGalleryItem&lt;/span&gt;): &lt;span class=&#34;title class_&#34;&gt;React&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;ReactNode&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;例子&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#例子&#34;&gt;#&lt;/a&gt; 🌰 例子&lt;/h3&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;renderCustomControls?: &lt;span class=&#34;function&#34;&gt;() =&amp;gt;&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;React&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;ReactNode&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;renderItem?: &lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;item: ReactImageGalleryItem&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;React&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;ReactNode&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;items&lt;/span&gt;: &lt;span class=&#34;title class_&#34;&gt;ReactImageGalleryItem&lt;/span&gt;[];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;onScreenChange?: &lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;fullScreenElement: Element&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;onPause?: &lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;currentIndex: number&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;onClick?: &lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;event: React.MouseEventHandler&amp;lt;HTMLDivElement&amp;gt;&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;onThumbnailError?: &lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;event: React.ReactEventHandler&amp;lt;HTMLImageElement&amp;gt;&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;onThumbnailClick?: &lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;event: React.MouseEventHandler&amp;lt;HTMLAnchorElement&amp;gt;, index: number&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;renderLeftNav?: &lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;onClick: React.MouseEventHandler&amp;lt;HTMLElement&amp;gt;, isDisabled: boolean&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;React&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;ReactNode&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <category term="ts" />
+        <updated>2023-10-11T16:00:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://18859421790.github.io/2023/10/10/2023.10.10/</id>
         <title>防抖节流深拷贝</title>
